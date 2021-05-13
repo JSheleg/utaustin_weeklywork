@@ -25,16 +25,38 @@ ul {
 li {
   list-style: none;
   width: 135px;
+  
 }
 
 /* TODO: Add your code to change the style of the list items when hovering over them */
+li:hover{
+  background-color: peachpuff;
+  font-weight: bold;
+  text-shadow: 0 0 10px;
+}
 
 /* TODO: Add your code to add a potato emoji to the list item */
-
+li::before{
+  content:"🥔";
+}
 /* TODO: Add your code to change the potato to a heart */
-
+li:hover::before{
+  content:"❤️";
+}
 /* TODO: Add your code to give every other list item a different background color */
+li { background: green; }
+li:nth-child(odd) { background: blue; }
 
 /* TODO: Add your code to make the first line of the first paragraph bold */
+.intro::first-line{
+  font-weight:bold;
+}
 
 /* TODO: Add your code to change the style of the first letter of the second paragraph */
+  .conclusion::first-letter{
+  font-weight:900;
+  font-size: x-large;
+  color:red;
+  font-family: cursive;
+  }
+

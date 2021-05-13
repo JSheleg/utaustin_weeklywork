@@ -1,3 +1,11 @@
+:root{
+  --light:#f9eded; 
+  --light-blue:#337eaa;
+  --sapphire:#1d6768;
+  --dark-blue:#29364f;
+  --dark:#181b26;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,7 +13,7 @@
 /* TODO: Extract colors to CSS Variables */
 
 body {
-  background-color: #f9eded;
+  background-color: var(--light);
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +30,7 @@ h6 {
 
 /* TODO: Replace the color hex codes with CSS variables */
 header {
-  background-color: #29364f;
+  background-color: var(--dark-blue);
 }
 
 .header-wrapper {
@@ -35,12 +43,12 @@ header {
 
 .header-wrapper h1 {
   margin: 0;
-  background-color: #1d6768;
+  background-color: var(--sapphire);
   padding: 20px 15px;
 }
 
 .header-wrapper h1 a {
-  color: #f9eded;
+  color: var(--light);
   text-decoration: none;
 }
 
@@ -56,7 +64,7 @@ header {
   padding: 0 15px;
   font-size: 20px;
   text-decoration: none;
-  border-right: 2px solid #337eaa;
+  border-right: 2px solid var(--light-blue);
 }
 
 .header-wrapper nav a:last-child {
@@ -74,7 +82,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px solid rgba(0, 240, 248, 0.76);
+  border: 5px solid var(--sapphire);
   border-radius: 5px;
   font-size: 35px;
 }
@@ -82,5 +90,5 @@ header {
 #main-content {
   float: left;
   color: #f9eded;
-  background: #181b26;
+  background: var(--dark);
 }
