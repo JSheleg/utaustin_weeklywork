@@ -89,6 +89,6 @@ header {
 
 #main-content {
   float: left;
-  color: #f9eded;
+  color: var(--light);
   background: var(--dark);
 }

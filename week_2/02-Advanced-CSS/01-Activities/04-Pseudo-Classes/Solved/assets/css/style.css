@@ -45,8 +45,10 @@ li:hover::before{
   content:"❤️";
 }
 /* TODO: Add your code to give every other list item a different background color */
-li { background:white; }
-li:nth-child(odd) { background:peachpuff; }
+
+li:nth-child(odd) { 
+  background:peachpuff; 
+}
 
 /* TODO: Add your code to make the first line of the first paragraph bold */
 .intro::first-line{
