@@ -33,6 +33,7 @@ li:hover{
   background-color: peachpuff;
   font-weight: bold;
   text-shadow: 0 0 10px;
+  color:purple;
 }
 
 /* TODO: Add your code to add a potato emoji to the list item */
@@ -44,8 +45,8 @@ li:hover::before{
   content:"❤️";
 }
 /* TODO: Add your code to give every other list item a different background color */
-li { background: green; }
-li:nth-child(odd) { background: blue; }
+li { background:white; }
+li:nth-child(odd) { background:peachpuff; }
 
 /* TODO: Add your code to make the first line of the first paragraph bold */
 .intro::first-line{
