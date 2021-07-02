@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Moment JS Exercises</title>
+  </head>
+
+  <body>
+    <h1>✨ Open the console to see the magic ✨</h1>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Import Moment.js here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+      var randomDate = '02/23/1999';
+      // Convert the `randomDate` to the "MM/DD/YYYY" format using `moment()`
+      //
+        var convertedDate = moment(randomDate).format('LL')
+      //
+      console.log(convertedDate);
+        var dayOfweek = moment(convertedDate).format('dddd');
+        var formateNum1 = moment(convertedDate).format("MM Do YY");
+        var formatNum2 = moment(convertedDate).format();
+
+      // Convert `convertedDate` into three other date formats of your choice using `.format()`
+      // Log them into the console
+      
+      console.log(dayOfweek);
+      console.log(formateNum1);
+      console.log(formatNum2);
+
+      // Calculate the time in years, months, days between today and the `convertedDate` using `.toNow()` and `.diff()`
+      // Log them into the console
+      var time = moment(convertedDate, "LL").toNow(true)
+      //var time =moment().diff().toNow(convertedDate)
+      
+
+      console.log(time);
+
+      var diff = moment(convertedDate).diff(moment(),'years')
+      console.log(diff);
+
+
+      // Calculate the number of days between the `convertedDate` and 02/14/2001
+      // Log it into the console
+      var days = moment.duration(convertedDate.diff(02/14/2001)).asDays();
+      console.log(days);
+
+      // Determine what day of the week and what week of the year the `convertedDate` falls on
+      // Log them into the console
+      //
+    </script>
+  </body>
+</html>
