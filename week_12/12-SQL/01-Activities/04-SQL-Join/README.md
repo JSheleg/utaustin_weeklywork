@@ -14,7 +14,7 @@ Refer to the documentation:
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
-* How do we define a relationship between two tables?
+* How do we define a relationship between two tables? (REFERENCES KEY WORD)
 
 Use [Google](https://www.google.com) or another search engine to research this.
 
