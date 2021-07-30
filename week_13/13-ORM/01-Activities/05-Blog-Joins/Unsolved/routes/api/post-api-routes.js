@@ -12,7 +12,8 @@ router.get('/', (req, res) => {
   }
 
   db.Post.findAll({
-    where: query
+    where: query,
+    include: [db.Author]
   }).then(dbPost => {
     res.json(dbPost);
   });
@@ -23,7 +24,8 @@ router.get('/:id', (req, res) => {
   db.Post.findOne({
     where: {
       id: req.params.id
-    }
+    },
+    include: [db.Author]
   }).then(dbPost => {
     res.json(dbPost);
   });

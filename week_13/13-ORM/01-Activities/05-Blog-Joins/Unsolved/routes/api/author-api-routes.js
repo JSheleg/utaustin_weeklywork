@@ -6,7 +6,12 @@ const db = require('../../models');
 
 // Update query to "include" associated Posts
 router.get('/', (req, res) => {
-  db.Author.findAll({}).then(dbAuthor => {
+  db.Author.findAll({
+    // attributes: ['id','title','body','catagory'],
+    include: [
+     db.Post
+    ]
+  }).then(dbAuthor => {
     res.json(dbAuthor);
   });
 });
@@ -16,7 +21,8 @@ router.get('/:id', (req, res) => {
   db.Author.findOne({
     where: {
       id: req.params.id
-    }
+    },
+    include: [db.Post]
   }).then(dbAuthor => {
     res.json(dbAuthor);
   });
