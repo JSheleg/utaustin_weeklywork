@@ -1,0 +1,35 @@
+<h1>Library Books</h1>
+
+<h2>Books you've already read</h2>
+
+
+<!-- Loop through the books and if 'read' is true, list them below -->
+
+<ul>
+  {{#each library}}
+  {{#if read}}
+
+  <li>Title:{{title}}</li>
+
+  <li>Author:{{author}}</li>
+  {{/if}}
+  {{/each}}
+</ul>
+
+
+<h2>Books you haven't read yet</h2>
+<!-- Loop through the books and if 'read' is false, list them below -->
+{{!-- #unless is false by default --}}
+<ul>
+  {{#each library}}
+  {{#unless read}}
+  <li>Title: {{title}}</li>
+
+  <li>Author: {{author}}</li>
+  {{/unless}}
+  {{/each}}
+</ul>
+
+
+
+
