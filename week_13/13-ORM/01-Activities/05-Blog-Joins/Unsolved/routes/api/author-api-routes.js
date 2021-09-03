@@ -8,9 +8,7 @@ const db = require('../../models');
 router.get('/', (req, res) => {
   db.Author.findAll({
     // attributes: ['id','title','body','catagory'],
-    include: [
-     db.Post
-    ]
+    include: [db.Post]
   }).then(dbAuthor => {
     res.json(dbAuthor);
   });

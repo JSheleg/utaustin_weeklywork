@@ -40,6 +40,8 @@ Character.prototype.isAlive = function(){
 // YOUR CODE HERE
 Character.prototype.attack = function(enemy){
     enemy.hitpoints -= this.strength;
+    console.log(this.name + 'attacked' + enemy.name + '!!');
+    console.log('\n---------\n');
 }
 
 // =============================================================
